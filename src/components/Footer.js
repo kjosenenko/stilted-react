@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-function footer() {
+function Footer() {
   return (
     <ul class='white center-text'>
       <li>Cody Hitchcock - Guitar/Vocals</li>
@@ -11,4 +11,4 @@ function footer() {
   )
 }
 
-export default footer
+export default Footer

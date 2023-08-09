@@ -9,9 +9,9 @@ function Nav() {
       </div>
       <div class='d-none d-lg-block'>
         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-          <li className="nav-link"><Link className="btn btn-dark" to="/">Listen Now</Link></li>
-          <li className="nav-link"><Link className="btn btn-dark" to="/">Upcoming Shows</Link></li>
-          <li className="nav-link"><Link className="btn btn-dark" to="/">Booking / Contact</Link></li>
+          <li className="nav-link"><Link className="btn btn-dark" to="/music">Listen Now</Link></li>
+          <li className="nav-link"><Link className="btn btn-dark" to="/shows">Upcoming Shows</Link></li>
+          <li className="nav-link"><Link className="btn btn-dark" to="/contact">Booking / Contact</Link></li>
         </ul>
       </div>
       <div class='d-lg-none'>
