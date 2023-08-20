@@ -1,7 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
 import {connect} from 'react-redux'
-import {submitForm} from '../actions/contact'
 
 function Contact() {
   const [inputs, setInputs] = useState({});
@@ -10,6 +9,22 @@ function Contact() {
     const name = event.target.name;
     const value = event.target.value;
     setInputs(values => ({...values, [name]: value}))
+  }
+
+  const submitForm = (data) => {
+    fetch("/contact", {
+        method: "POST",
+        headers: {
+          "Accept": "application/json",
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({data})
+    })
+    .then(r => {
+      if (r.status == 201) {
+        window.location.href = '/submitted';
+      }
+    })
   }
 
   const handleSubmit = (e) => {
@@ -55,4 +70,4 @@ function Contact() {
   )
 }
 
-export default connect(null, {submitForm})(Contact)
+export default Contact
