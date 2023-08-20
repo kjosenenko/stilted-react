@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 
 function Footer() {
   return (
-    <ul class='white center-text'>
+    <ul className='white center-text'>
       <li>Cody Hitchcock - Guitar/Vocals</li>
       <li>Thom Miller - Bass</li>
       <li>KJ Osenenko - Drums</li>
