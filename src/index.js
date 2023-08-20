@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import {Provider} from 'react-redux'
-import {createStore, applyMiddleware, combineReducers} from 'redux'
+import {legacy_createStore, applyMiddleware} from 'redux'
 import thunk from 'redux-thunk'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import showsReducer from './reducers/showsReducer'
 
-const reducer = combineReducers({
-  shows: showsReducer,
-})
+const reducer = showsReducer
 
-const store = createStore(reducer, applyMiddleware(thunk))
+const store = legacy_createStore(reducer, applyMiddleware(thunk))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

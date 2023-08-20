@@ -14,7 +14,7 @@ function Nav() {
               <a className="btn btn-dark" href="/shows">Upcoming Shows</a>
             </li>
             <li className="nav-link">
-              <a className="btn btn-dark" href="contact">Booking / Contact</a>
+              <a className="btn btn-dark" href="/contact">Booking / Contact</a>
             </li>
           </ul>
         </div>

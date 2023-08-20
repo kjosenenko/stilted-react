@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import {getShows} from './actions/shows'
 import {connect} from 'react-redux'
+import React, {useEffect} from 'react';
 import Nav from './components/Nav'
 import Home from './components/Home'
 import Footer from './components/Footer'
@@ -11,6 +13,10 @@ import Contact from './components/Contact'
 import ContactResponse from './components/ContactResponse';
 
 function App() {
+  useEffect(() => {
+    getShows()
+  });
+
   return (
     <Router>
       <Nav />
@@ -30,4 +36,4 @@ function App() {
     );
 }
 
-export default App;
+export default connect(null, {getShows})(App);
