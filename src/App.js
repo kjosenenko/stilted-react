@@ -13,7 +13,7 @@ function App() {
   return (
     <Router>
       <Nav />
-      <br /><br />
+      <br />
       <div id="container-div" className="container">
         <Routes>
           <Route path="/" element={<Home/>}/>
