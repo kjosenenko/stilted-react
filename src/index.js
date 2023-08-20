@@ -6,9 +6,10 @@ import thunk from 'redux-thunk'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import showsReducer from './reducers/showsReducer'
 
 const reducer = combineReducers({
-  
+  shows: showsReducer,
 })
 
 const store = createStore(reducer, applyMiddleware(thunk))
