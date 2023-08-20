@@ -9,7 +9,7 @@ export const submitForm = (data) => {
   })
   .then(r => {
     if (r.status == 201) {
-      debugger
+      window.location.href = '/submitted';
     }
   })
 }
