@@ -2,7 +2,7 @@ import React from 'react'
 
 function Show(show) {
   return (
-    <div className="card">
+    <div className="card" key={show.id}>
       <div className="row">
         <div className="col-md-12">
           <div className="card-body">
