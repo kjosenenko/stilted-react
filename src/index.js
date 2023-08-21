@@ -6,11 +6,8 @@ import thunk from 'redux-thunk'
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import showsReducer from './reducers/showsReducer'
 
-const reducer = showsReducer
-
-const store = legacy_createStore(reducer, applyMiddleware(thunk))
+const store = legacy_createStore(applyMiddleware(thunk))
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
