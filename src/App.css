@@ -133,3 +133,7 @@ body {
   max-height: 400px;  
   width: auto; 
 }
+
+.presale_link {
+  color: #E5392B;
+}
