@@ -22,7 +22,7 @@ function Shows() {
         <h1 className="center-text monoton">SHOWS AND DATES</h1>
         <div className="card">
           <div className="card-body">
-            <h5 className="center-text">No! new shows at this time. Please check back later.</h5>
+            <h5 className="center-text">No new shows at this time. Please check back later.</h5>
           </div>
         </div>
       </div>
