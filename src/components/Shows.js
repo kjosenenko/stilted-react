@@ -10,7 +10,7 @@ function Shows() {
     fetch("/shows")
     .then(r => r.json())
     .then(shows => setShows({shows: shows}))
-  });
+  }, []);
 
   if (shows.shows) {
     return (
