@@ -12,7 +12,6 @@ function Show(show) {
         <div className="col-md-12">
           <div className="card-body">
             <h3>{show.venue}</h3>
-            <h5>With {show.supporting_acts}</h5>
             <h5>{showDateTime}</h5>
             {presaleLink}
           </div>
