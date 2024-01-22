@@ -4,6 +4,7 @@ import ShowsList from './ShowsList'
 
 function Shows() {
   const [shows, setShows] = useState({});
+  const [past_shows, setPastShows] = useState({});
   // debugger
 
   useEffect(() => {
@@ -12,23 +13,17 @@ function Shows() {
     .then(shows => setShows({shows: shows}))
   }, []);
 
+  useEffect(() => {
+    fetch("/past_shows")
+    .then(r => r.json())
+    .then(past_shows => setPastShows({past_shows: past_shows}))
+  }, []);
+
   if (shows.shows) {
-    return (
-      ShowsList(shows.shows)
-    )
-  } else {
-    return (
-      <div>
-        <h1 className="center-text monoton">SHOWS AND DATES</h1>
-        <div className="card">
-          <div className="card-body">
-            <h5 className="center-text">No new shows at this time. Please check back later.</h5>
-          </div>
-        </div>
-      </div>
-    )
-  }
-  
+  return (
+    ShowsList(shows.shows)
+  )
+  }  
 }
 
 export default Shows
