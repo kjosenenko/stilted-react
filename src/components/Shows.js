@@ -15,13 +15,13 @@ function Shows() {
     </div>
 
   useEffect(() => {
-    fetch("/shows")
+    fetch("https://api.stiltedband.com/shows/")
     .then(r => r.json())
     .then(shows => setShows({shows: shows}))
   }, []);
 
   useEffect(() => {
-    fetch("/past_shows")
+    fetch("https://api.stiltedband.com/past_shows/")
     .then(r => r.json())
     .then(past_shows => setPastShows({past_shows: past_shows}))
   }, []);
