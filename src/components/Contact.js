@@ -12,7 +12,7 @@ function Contact() {
   }
 
   const submitForm = (data) => {
-    fetch("https://api.stiltedband.com/contact/", {
+    fetch("https://api.stiltedband.com/contact", {
         method: "POST",
         headers: {
           "Accept": "application/json",
