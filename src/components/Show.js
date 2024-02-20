@@ -11,7 +11,7 @@ function Show({show, current}) {
       <div className="card" key={show.id}>
         <div className="row">
           <div className="col-md-2">
-            <img className="show_image" src={show.image}/>
+            <img className="show_image" src={`https://api.stiltedband.com${show.image}`}/>
           </div>
           <div className="col-md-10">
             <div className="card-body">
